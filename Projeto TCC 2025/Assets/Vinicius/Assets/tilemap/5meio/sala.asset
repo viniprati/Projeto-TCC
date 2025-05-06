@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: sala
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -1266793625, guid: 6d52c443c6cbdb84292b558853183fb2, type: 3}
+  - {fileID: -63528001, guid: 0f8f6eb9caf94e54c81ddbfdfb4483ed, type: 3}
+  - {fileID: -929359312, guid: f6171d31cc9415d4ebc9781f6fe0353c, type: 3}
+  - {fileID: -1991716361, guid: b6fd09aec74abb345bdba3a16142169e, type: 3}
+  m_MinSpeed: 900
+  m_MaxSpeed: 900
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
