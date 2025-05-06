@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: sala
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -5675716643971599528, guid: 18797fa3b9f103545a026d3c8a8a5ae9, type: 3}
-  - {fileID: 8185563065791875171, guid: 47f688e979a0fdd4f85711bd5e70ed92, type: 3}
-  - {fileID: -8688910480350348910, guid: 2ecc942ebf1984e4e97711802779ee7b, type: 3}
-  - {fileID: -1912716772566653806, guid: 960174b4bcc336c4dbf6e2486c3d3713, type: 3}
-  m_MinSpeed: 900
-  m_MaxSpeed: 900
+  - {fileID: 206449612, guid: 18797fa3b9f103545a026d3c8a8a5ae9, type: 3}
+  - {fileID: 465646826, guid: 47f688e979a0fdd4f85711bd5e70ed92, type: 3}
+  - {fileID: 1219381515, guid: 2ecc942ebf1984e4e97711802779ee7b, type: 3}
+  - {fileID: 696213559, guid: 960174b4bcc336c4dbf6e2486c3d3713, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0
