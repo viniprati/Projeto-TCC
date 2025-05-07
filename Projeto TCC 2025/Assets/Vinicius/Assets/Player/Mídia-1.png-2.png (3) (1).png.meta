@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: 960174b4bcc336c4dbf6e2486c3d3713
+guid: af60bca20936a3a439be3383dcbd5272
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1912716772566653806
-    second: sprite_04_0
+      213: -4962289286084861070
+    second: "M\xEDdia-1.png-2.png (3) (1)_0"
+  - first:
+      213: -6981326991227111368
+    second: "M\xEDdia-1.png-2.png (3) (1)_1"
+  - first:
+      213: 8423430489053427668
+    second: "M\xEDdia-1.png-2.png (3) (1)_2"
+  - first:
+      213: -158746136706863927
+    second: "M\xEDdia-1.png-2.png (3) (1)_3"
+  - first:
+      213: -8910371648406993081
+    second: "M\xEDdia-1.png-2.png (3) (1)_4"
+  - first:
+      213: -565425986709704148
+    second: "M\xEDdia-1.png-2.png (3) (1)_5"
+  - first:
+      213: -2371807851045273373
+    second: "M\xEDdia-1.png-2.png (3) (1)_6"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -139,13 +157,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_04_0
+      name: "M\xEDdia-1.png-2.png (3) (1)_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
+        x: 13
+        y: 0
+        width: 38
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,184 +172,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 294ab37ba3aa475e0800000000000000
-      internalID: -1912716772566653806
+      spriteID: 2736f268f28622bb0800000000000000
+      internalID: -4962289286084861070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_04_1
+      name: "M\xEDdia-1.png-2.png (3) (1)_1"
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3112712e5fd2ad640b6884ec3f9ee2cc
-      internalID: 750891729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_04_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f71ff3e327443c14eabfd5c066b96058
-      internalID: -1353933407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_04_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e51e8ad0ca5b334bb7742ddce774462
-      internalID: 450892703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_04_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a274ea25734b7cf4da08b5982c3b9321
-      internalID: -2100619570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_04_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcca09397622c3d4f9a85a9f88b95ba6
-      internalID: -1767447005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_04_6
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 77
         y: 0
-        width: 64
-        height: 64
+        width: 38
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 278b9a88545a7fa4e9faacb5e056bd95
-      internalID: 696213559
+      spriteID: 838bf0317185d1f90800000000000000
+      internalID: -6981326991227111368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_04_7
+      name: "M\xEDdia-1.png-2.png (3) (1)_2"
       rect:
         serializedVersion: 2
-        x: 64
+        x: 141
         y: 0
-        width: 64
-        height: 64
+        width: 38
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e2671df25cf26ac47adbdee42f1458f4
-      internalID: -1365355038
+      spriteID: 4d7793a866906e470800000000000000
+      internalID: 8423430489053427668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_04_8
+      name: "M\xEDdia-1.png-2.png (3) (1)_3"
       rect:
         serializedVersion: 2
-        x: 128
+        x: 205
         y: 0
-        width: 64
-        height: 64
+        width: 38
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 391eb8728da175e4c854e42d9e2e6d1a
-      internalID: -1880535606
+      spriteID: 9cc2f10da350ccdf0800000000000000
+      internalID: -158746136706863927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (1)_4"
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 0
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7474df7e130085480800000000000000
+      internalID: -8910371648406993081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (1)_5"
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 0
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22b4639f043728f0800000000000000
+      internalID: -565425986709704148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (1)_6"
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 0
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0c6fa6355a51fd0800000000000000
+      internalID: -2371807851045273373
       vertices: []
       indices: 
       edges: []
@@ -340,7 +314,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 96cdf8e4b860ba444a573f7c24fe98be
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -350,15 +324,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sprite_04_0: -1912716772566653806
-      sprite_04_1: 750891729
-      sprite_04_2: -1353933407
-      sprite_04_3: 450892703
-      sprite_04_4: -2100619570
-      sprite_04_5: -1767447005
-      sprite_04_6: 696213559
-      sprite_04_7: -1365355038
-      sprite_04_8: -1880535606
+      "M\xEDdia-1.png-2.png (3) (1)_0": -4962289286084861070
+      "M\xEDdia-1.png-2.png (3) (1)_1": -6981326991227111368
+      "M\xEDdia-1.png-2.png (3) (1)_2": 8423430489053427668
+      "M\xEDdia-1.png-2.png (3) (1)_3": -158746136706863927
+      "M\xEDdia-1.png-2.png (3) (1)_4": -8910371648406993081
+      "M\xEDdia-1.png-2.png (3) (1)_5": -565425986709704148
+      "M\xEDdia-1.png-2.png (3) (1)_6": -2371807851045273373
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
