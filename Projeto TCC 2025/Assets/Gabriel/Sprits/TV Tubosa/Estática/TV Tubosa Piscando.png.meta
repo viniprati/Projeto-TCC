@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TV Tubosa Piscando_0: -2872343429797833753
+      TV Tubosa Piscando_1: 7811630240449760649
+      TV Tubosa Piscando_2: 7902943091543930327
+      TV Tubosa Piscando_3: -6743654417486241715
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
