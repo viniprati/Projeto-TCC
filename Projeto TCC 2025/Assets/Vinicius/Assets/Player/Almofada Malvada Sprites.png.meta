@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 35692b7c9ac6f7a4d84c253ec40cd275
+guid: 82e694aaece34aa48a76f2a5a438750c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7883623809809028793
-    second: mikebaguncinha2.0_1_0
+      213: 5639259083973943083
+    second: Almofada Malvada Sprites_0
+  - first:
+      213: 5544767223977882656
+    second: Almofada Malvada Sprites_1
+  - first:
+      213: 7180155017696046605
+    second: Almofada Malvada Sprites_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mikebaguncinha2.0_1_0
+      name: Almofada Malvada Sprites_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 0
-        width: 38
-        height: 50
+        x: 9
+        y: 20
+        width: 46
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +160,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 74965890aedb79290800000000000000
-      internalID: -7883623809809028793
+      spriteID: b2f59a0424ca24e40800000000000000
+      internalID: 5639259083973943083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Almofada Malvada Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 20
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0243e6ba968f2fc40800000000000000
+      internalID: 5544767223977882656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Almofada Malvada Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 12
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ee20e42f805a360800000000000000
+      internalID: 7180155017696046605
       vertices: []
       indices: 
       edges: []
