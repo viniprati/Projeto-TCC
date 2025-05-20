@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 3ad1fd07a7aa0b446a3fd0524de5b832
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5285817694369459790
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_0"
+  - first:
+      213: -1228882810170541411
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_1"
+  - first:
+      213: -6479577388041310589
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_2"
+  - first:
+      213: -3338567583043309965
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_3"
+  - first:
+      213: -4930875288985982240
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_4"
+  - first:
+      213: 6827969407552602340
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_5"
+  - first:
+      213: 8446893896571414559
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_6"
+  - first:
+      213: -4071193531345546376
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_7"
+  - first:
+      213: -1191479922639210029
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_8"
+  - first:
+      213: -4938861706275692707
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_9"
+  - first:
+      213: -4251353836221884334
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_10"
+  - first:
+      213: -3981677225079076432
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_11"
+  - first:
+      213: -9210070477645923973
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_12"
+  - first:
+      213: -8410637762652911209
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_13"
+  - first:
+      213: 2988523574080598707
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_14"
+  - first:
+      213: 1087296450965255
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_15"
+  - first:
+      213: -5959663230761191221
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_16"
+  - first:
+      213: -790100054513105482
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_17"
+  - first:
+      213: -8116365460164897027
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_18"
+  - first:
+      213: 4500398653844241669
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_19"
+  - first:
+      213: 8234419109833362247
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_20"
+  - first:
+      213: 6347553932433421054
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_21"
+  - first:
+      213: -7334065649710461619
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_22"
+  - first:
+      213: -34074462151293733
+    second: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_23"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_0"
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 127
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ead54003ffa5940800000000000000
+      internalID: 5285817694369459790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_1"
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 127
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a7335589122fee0800000000000000
+      internalID: -1228882810170541411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_2"
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 127
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ee42322bae316a0800000000000000
+      internalID: -6479577388041310589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_3"
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 127
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ea112c8760ba1d0800000000000000
+      internalID: -3338567583043309965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_4"
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 127
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea2d30bc03029bb0800000000000000
+      internalID: -4930875288985982240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_5"
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 127
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e048620002d1ce50800000000000000
+      internalID: 6827969407552602340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_6"
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 127
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18ed80de35693570800000000000000
+      internalID: 8446893896571414559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_7"
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 127
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873d748ad073087c0800000000000000
+      internalID: -4071193531345546376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_8"
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 63
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d97416b253077fe0800000000000000
+      internalID: -1191479922639210029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_9"
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 63
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f58a20273a57bb0800000000000000
+      internalID: -4938861706275692707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_10"
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 63
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2581089e5382005c0800000000000000
+      internalID: -4251353836221884334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_11"
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 63
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b906ecd8ad3eb8c0800000000000000
+      internalID: -3981677225079076432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_12"
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 63
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b793a9792b14f2080800000000000000
+      internalID: -9210070477645923973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_13"
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 63
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799469e2489674b80800000000000000
+      internalID: -8410637762652911209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_14"
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 63
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b274f35b5e597920800000000000000
+      internalID: 2988523574080598707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_15"
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 63
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70fa9bee3ecd30000800000000000000
+      internalID: 1087296450965255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_16"
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8b5850ed50b4da0800000000000000
+      internalID: -5959663230761191221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_17"
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5cab1cf200905f0800000000000000
+      internalID: -790100054513105482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_18"
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df61f97cd90ec5f80800000000000000
+      internalID: -8116365460164897027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_19"
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d38064bb0a47e30800000000000000
+      internalID: 4500398653844241669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_20"
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 0
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74b4e457d88864270800000000000000
+      internalID: 8234419109833362247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_21"
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 0
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2f357bbaa071850800000000000000
+      internalID: 6347553932433421054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_22"
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 0
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d0d9d262a283a90800000000000000
+      internalID: -7334065649710461619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_23"
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 0
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd44f8b0571f68ff0800000000000000
+      internalID: -34074462151293733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_0": 5285817694369459790
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_1": -1228882810170541411
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_10": -4251353836221884334
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_11": -3981677225079076432
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_12": -9210070477645923973
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_13": -8410637762652911209
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_14": 2988523574080598707
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_15": 1087296450965255
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_16": -5959663230761191221
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_17": -790100054513105482
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_18": -8116365460164897027
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_19": 4500398653844241669
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_2": -6479577388041310589
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_20": 8234419109833362247
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_21": 6347553932433421054
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_22": -7334065649710461619
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_23": -34074462151293733
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_3": -3338567583043309965
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_4": -4930875288985982240
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_5": 6827969407552602340
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_6": 8446893896571414559
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_7": -4071193531345546376
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_8": -1191479922639210029
+      "M\xEDdia-1.png-2.png (3) (2)-1.png (1) (1)_9": -4938861706275692707
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
