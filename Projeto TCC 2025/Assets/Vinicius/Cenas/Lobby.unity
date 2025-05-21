@@ -219,10 +219,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1032770858}
   - component: {fileID: 1032770857}
-  - component: {fileID: 1032770859}
   - component: {fileID: 1032770861}
   - component: {fileID: 1032770860}
   - component: {fileID: 1032770862}
+  - component: {fileID: 1032770863}
   m_Layer: 0
   m_Name: "M\xEDdia-1.png-2.png (3) (2)-1.png_0"
   m_TagString: Untagged
@@ -302,39 +302,6 @@ Transform:
   - {fileID: 2118050099}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1032770859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032770856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cabeb841abe4c0489ca1b4c33bc6d6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
-  snapMovement: 1
-  pixelSize: 0.0625
-  dashSpeed: 10
-  dashDuration: 0.2
-  dashCooldown: 1
-  dashKey: 304
-  invincibleDuringDash: 1
-  collisionLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  collisionCheckRadius: 0.4
-  solidTilemap: {fileID: 0}
-  rb: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  playerCollider: {fileID: 0}
-  animator: {fileID: 0}
-  flickerSpriteDuringDash: 1
-  flickerRate: 0.1
-  spriteVisibleRatio: 0.7
-  dashCollisionEffect: {fileID: 0}
 --- !u!50 &1032770860
 Rigidbody2D:
   serializedVersion: 5
@@ -430,6 +397,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1032770863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032770856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b09f00a1eefd16b4783c1ad37946972b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &1230387209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,7 +1354,7 @@ Tilemap:
       - {fileID: -1991716361, guid: b6fd09aec74abb345bdba3a16142169e, type: 3}
       - {fileID: -929359312, guid: f6171d31cc9415d4ebc9781f6fe0353c, type: 3}
       - {fileID: -63528001, guid: 0f8f6eb9caf94e54c81ddbfdfb4483ed, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: -3, z: 0}
@@ -1400,7 +1380,7 @@ Tilemap:
       - {fileID: -1912716772566653806, guid: 960174b4bcc336c4dbf6e2486c3d3713, type: 3}
       - {fileID: -8688910480350348910, guid: 2ecc942ebf1984e4e97711802779ee7b, type: 3}
       - {fileID: 8185563065791875171, guid: 47f688e979a0fdd4f85711bd5e70ed92, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -2, y: -2, z: 0}
@@ -1426,7 +1406,7 @@ Tilemap:
       - {fileID: -1353933407, guid: 960174b4bcc336c4dbf6e2486c3d3713, type: 3}
       - {fileID: 1744890128, guid: 2ecc942ebf1984e4e97711802779ee7b, type: 3}
       - {fileID: 786015308, guid: 47f688e979a0fdd4f85711bd5e70ed92, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
