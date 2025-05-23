@@ -1,70 +1,78 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using static UnityEngine.Rendering.DebugUI;
 
-public class PlayerMovement : MonoBehaviour
+namespace TopDown
 {
-    public float speed = 5f;
-    private Rigidbody2D rb;
-    private Vector2 input;
-    Animator anim;
-    private Vector2 lastMoveDirection;
-    private bool facingLeft = true; // nosso sprite está virado pra esquerda
-
-    void Start()
+    public class PlayerMovement : MonoBehaviour
     {
-        anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
-    }
+        [Header("Movement")]
+        [SerializeField] private float moveSpeed = 5f;
+        private Vector2 movementDirection;
+        private Vector2 currentInput;
 
-    void Update()
-    {
-        ProcessInputs();
-        Animate();
+        [Header("Animations")]
+        [SerializeField] private Animator anim;
+        private string lastDirection = "Down";
 
-        // Flip - checa se está olhando pro lado errado
-        if (input.x < 0 && !facingLeft || input.x > 0 && facingLeft)
+        private Rigidbody2D rb;
+
+        private void Awake()
         {
-            Flip();
+            rb = GetComponent<Rigidbody2D>();
         }
-    }
-
-    void FixedUpdate()
-    {
-        rb.linearVelocity = input * speed;
-    }
-
-    void ProcessInputs()
-    {
-        input = Vector2.zero;
-
-        if (Input.GetKey(KeyCode.W)) input.y = 1;
-        if (Input.GetKey(KeyCode.S)) input.y = -1;
-        if (Input.GetKey(KeyCode.A)) input.x = -1;
-        if (Input.GetKey(KeyCode.D)) input.x = 1;
-
-        input.Normalize();
-
-        if (input != Vector2.zero)
+        private void Update()
         {
-            lastMoveDirection = input;
+            HandleAnimations();
         }
-    }
+        private void FixedUpdate()
+        {
+            rb.linearVelocity = movementDirection * moveSpeed;
+        }
 
-    void Animate()
-    {
-        if (anim == null) return;
 
-        anim.SetFloat("MoveX", input.x);
-        anim.SetFloat("MoveY", input.y);
-        anim.SetFloat("Speed", input.sqrMagnitude);
-        anim.SetFloat("LastMoveX", lastMoveDirection.x);
-        anim.SetFloat("LastMoveY", lastMoveDirection.y);
-    }
+        private void HandleAnimations()
+        {
+            if (anim == null) return;
+            string animationName = "";
+            if (movementDirection == Vector2.zero)
+                animationName = "Idle";
+            else
+                animationName = "Walking";
+            anim.Play(animationName + lastDirection);
+        }
 
-    void Flip()
-    {
-        facingLeft = !facingLeft;
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1;
-        transform.localScale = localScale;
+        private Vector3 GetDirection(Vector3 input)
+        {
+            Vector3 finalDirection = Vector3.zero;
+            if (input.y > 0.01f)
+            {
+                lastDirection = "Up";
+                movementDirection = new Vector2(0, 1);
+            }
+            else if (input.y < -0.01f)
+            {
+                lastDirection = "Down";
+                movementDirection = new Vector2(0, -1);
+            }
+            else if (input.x > 0.01f)
+            {
+                lastDirection = "Right";
+                movementDirection = new Vector2(1, 0);
+            }
+            else if (input.x < -0.01f)
+            {
+                lastDirection = "Left";
+                movementDirection = new Vector2(-1, 0);
+            }
+            return finalDirection;
+        }
+
+        private void OnMOve(InputValue value)
+        {
+            currentInput = value.Get<Vector2>().normalized;
+            movementDirection = GetDirection(currentInput);
+        }
     }
 }
+
