@@ -7,7 +7,7 @@ namespace TopDown
     public class PlayerMovement : MonoBehaviour
     {
         [Header("Movement")]
-        [SerializeField] private float moveSpeed = 5f;
+        [SerializeField] private float moveSpeed = 10f;
         private Vector2 movementDirection;
         private Vector2 currentInput;
 
@@ -68,7 +68,7 @@ namespace TopDown
             return finalDirection;
         }
 
-        private void OnMOve(InputValue value)
+        private void OnMove(InputValue value)
         {
             currentInput = value.Get<Vector2>().normalized;
             movementDirection = GetDirection(currentInput);
