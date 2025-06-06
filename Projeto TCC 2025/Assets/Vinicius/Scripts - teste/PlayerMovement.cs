@@ -6,11 +6,14 @@ namespace TopDown
     [RequireComponent(typeof(Animator))]
     public class PlayerMovement : MonoBehaviour
     {
+        [Header("Health")]
+        [SerializeField] private int maxHealth = 10;
+        private int currentHealth;
+
         [Header("Movement")]
         [SerializeField] private float moveSpeed = 5f;
         private Vector2 _movementInput;
-        // _lastMovementDirection guardará a direção normalizada para lógica de dash/tiro
-        private Vector2 _lastRawInputDirection = Vector2.down; // Guarda o último input bruto para LastMoveX/Y
+        private Vector2 _lastRawInputDirection = Vector2.down;
 
         [Header("Dash")]
         [SerializeField] private float dashSpeed = 15f;
@@ -26,20 +29,18 @@ namespace TopDown
         [SerializeField] private Transform firePoint;
         [SerializeField] private float projectileSpeed = 10f;
         [SerializeField] private float shootCooldown = 0.5f;
-        [SerializeField] private KeyCode shootKey = KeyCode.Mouse0; // Botão esquerdo do mouse
+        [SerializeField] private KeyCode shootKey = KeyCode.Mouse0;
         private float _shootCooldownTimer;
 
         [Header("Animations")]
         private Animator _anim;
-        // Nomes dos parâmetros do Animator (para fácil alteração se necessário)
         private const string AnimParamMoveX = "MoveX";
         private const string AnimParamMoveY = "MoveY";
         private const string AnimParamLastMoveX = "LastMoveX";
         private const string AnimParamLastMoveY = "LastMoveY";
-        private const string AnimParamIsMoving = "IsMoving"; // Adicione este parâmetro Bool ao seu Animator
-        private const string AnimParamDash = "Dash";         // Adicione este Trigger se tiver animação de dash
-        private const string AnimParamShoot = "Shoot";       // Adicione este Trigger se tiver animação de tiro
-
+        private const string AnimParamIsMoving = "IsMoving";
+        private const string AnimParamDash = "Dash";
+        private const string AnimParamShoot = "Shoot";
 
         private Rigidbody2D _rb;
 
@@ -47,6 +48,7 @@ namespace TopDown
         {
             _rb = GetComponent<Rigidbody2D>();
             _anim = GetComponent<Animator>();
+            currentHealth = maxHealth;
 
             if (firePoint == null)
             {
@@ -62,8 +64,6 @@ namespace TopDown
                 }
             }
 
-            // Garante que o Animator tenha os parâmetros necessários (checa apenas na inicialização)
-            // Isso é mais para debug, a extensão HasParameter é usada em tempo real.
             if (!_anim.HasParameter(AnimParamMoveX)) Debug.LogError($"Animator não tem o parâmetro: {AnimParamMoveX}");
             if (!_anim.HasParameter(AnimParamMoveY)) Debug.LogError($"Animator não tem o parâmetro: {AnimParamMoveY}");
             if (!_anim.HasParameter(AnimParamLastMoveX)) Debug.LogError($"Animator não tem o parâmetro: {AnimParamLastMoveX}");
@@ -81,10 +81,7 @@ namespace TopDown
 
         private void FixedUpdate()
         {
-            if (_isDashing)
-            {
-                return;
-            }
+            if (_isDashing) return;
             MoveCharacter();
         }
 
@@ -101,49 +98,32 @@ namespace TopDown
 
             _movementInput = new Vector2(moveX, moveY);
 
-            // Não normaliza aqui, pois o Blend Tree espera valores entre -1 e 1 para cada eixo.
-            // A normalização para velocidade de movimento é feita implicitamente ao aplicar moveSpeed
-            // ou pode ser feita antes de aplicar ao Rigidbody se você permitir movimento diagonal total.
-            // Para o blend tree, os valores brutos são geralmente melhores.
-
-            // Guarda a última direção de input significativo para idle e mirar
-            // Usamos _movementInput diretamente, pois o Blend Tree também usa valores não normalizados.
             if (_movementInput.sqrMagnitude > 0.01f)
-            {
-                _lastRawInputDirection = _movementInput; // Não normaliza para manter a fidelidade ao input para o blend tree de idle
-            }
+                _lastRawInputDirection = _movementInput;
         }
 
         private void MoveCharacter()
         {
-            // Para movimento, é bom normalizar se você quer velocidade consistente em diagonais.
             Vector2 effectiveMovement = _movementInput;
             if (effectiveMovement.sqrMagnitude > 1)
-            {
                 effectiveMovement.Normalize();
-            }
+
             _rb.linearVelocity = effectiveMovement * moveSpeed;
         }
 
         private void HandleDashState()
         {
             if (_dashCooldownTimer > 0)
-            {
                 _dashCooldownTimer -= Time.deltaTime;
-            }
 
             if (Input.GetKeyDown(dashKey) && !_isDashing && _dashCooldownTimer <= 0)
-            {
                 StartDash();
-            }
 
             if (_isDashing)
             {
                 _dashTimer -= Time.deltaTime;
                 if (_dashTimer <= 0)
-                {
                     StopDash();
-                }
             }
         }
 
@@ -153,18 +133,9 @@ namespace TopDown
             _dashTimer = dashDuration;
             _dashCooldownTimer = dashCooldown;
 
-            Vector2 dashDirection;
-            if (_movementInput.sqrMagnitude > 0.01f) // Se estiver se movendo
-            {
-                dashDirection = _movementInput.normalized;
-            }
-            else // Se parado, usa a última direção que estava olhando
-            {
-                // Normaliza _lastRawInputDirection para o dash
-                dashDirection = _lastRawInputDirection.normalized;
-                // Se _lastRawInputDirection for zero (começo do jogo sem mover), usa um padrão
-                if (dashDirection == Vector2.zero) dashDirection = Vector2.down;
-            }
+            Vector2 dashDirection = _movementInput.sqrMagnitude > 0.01f
+                ? _movementInput.normalized
+                : (_lastRawInputDirection == Vector2.zero ? Vector2.down : _lastRawInputDirection.normalized);
 
             _rb.linearVelocity = dashDirection * dashSpeed;
 
@@ -177,21 +148,19 @@ namespace TopDown
             _isDashing = false;
         }
 
-
         private void HandleShooting()
         {
             if (_shootCooldownTimer > 0)
-            {
                 _shootCooldownTimer -= Time.deltaTime;
-            }
 
-            if (Input.GetKeyDown(shootKey) && _shootCooldownTimer <= 0 && !_isDashing) // Não atira durante o dash
+            if (Input.GetKeyDown(shootKey) && _shootCooldownTimer <= 0 && !_isDashing)
             {
                 if (projectilePrefab == null || firePoint == null)
                 {
                     Debug.LogError("Projectile Prefab ou Fire Point não atribuído!");
                     return;
                 }
+
                 Shoot();
                 _shootCooldownTimer = shootCooldown;
             }
@@ -199,25 +168,17 @@ namespace TopDown
 
         private void Shoot()
         {
-            // Direção do Tiro: baseada na última direção de input não nulo, normalizada.
             Vector2 shootDirection = _lastRawInputDirection.normalized;
-            if (shootDirection == Vector2.zero) // Caso comece atirando sem nunca ter movido
-            {
-                shootDirection = Vector2.down; // Ou qualquer direção padrão que você preferir
-            }
-
+            if (shootDirection == Vector2.zero)
+                shootDirection = Vector2.down;
 
             GameObject projectileGO = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
             Rigidbody2D projectileRb = projectileGO.GetComponent<Rigidbody2D>();
 
             if (projectileRb != null)
-            {
                 projectileRb.linearVelocity = shootDirection * projectileSpeed;
-            }
             else
-            {
                 Debug.LogWarning("Projétil não tem Rigidbody2D.");
-            }
 
             float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
             projectileGO.transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
@@ -226,41 +187,45 @@ namespace TopDown
                 _anim.SetTrigger(AnimParamShoot);
         }
 
-
         private void HandleAnimations()
         {
             bool isCurrentlyMoving = _movementInput.sqrMagnitude > 0.01f;
 
-            // Define o parâmetro IsMoving para transição entre Idle e Walk
             _anim.SetBool(AnimParamIsMoving, isCurrentlyMoving && !_isDashing);
 
             if (isCurrentlyMoving && !_isDashing)
             {
-                // Se movendo, atualiza MoveX e MoveY para o Blend Tree de caminhada
                 _anim.SetFloat(AnimParamMoveX, _movementInput.x);
                 _anim.SetFloat(AnimParamMoveY, _movementInput.y);
 
-                // Também atualiza LastMoveX e LastMoveY para que, ao parar,
-                // o Blend Tree de Idle use a direção correta.
                 _anim.SetFloat(AnimParamLastMoveX, _movementInput.x);
                 _anim.SetFloat(AnimParamLastMoveY, _movementInput.y);
             }
-            else if (!_isDashing) // Parado e não dando dash
+            else if (!_isDashing)
             {
-                // Se parado, o Blend Tree de Idle usará LastMoveX e LastMoveY.
-                // Esses valores já foram definidos quando o personagem estava se movendo.
-                // Podemos zerar MoveX e MoveY para garantir que o Blend Tree de caminhada
-                // não esteja tentando usar valores antigos se a lógica de transição falhar,
-                // mas o IsMoving=false deve cuidar disso.
                 _anim.SetFloat(AnimParamMoveX, 0);
                 _anim.SetFloat(AnimParamMoveY, 0);
             }
-            // Se estiver dando dash, o IsMoving será false, e os triggers de dash (se houver) podem ser usados.
-            // A animação de Idle/Walk não deve tocar durante o dash se IsMoving estiver corretamente configurado.
+        }
+
+        public void TakeDamage(int amount)
+        {
+            currentHealth -= amount;
+            Debug.Log($"Player levou dano. Vida atual: {currentHealth}");
+
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
+        }
+
+        private void Die()
+        {
+            Debug.Log("Player morreu.");
+            gameObject.SetActive(false); // ou animar morte, recarregar cena, etc.
         }
     }
 
-    // Extensão para Animator.HasParameter (coloque fora da classe PlayerMovement, mas dentro do namespace ou globalmente)
     public static class AnimatorExtensions
     {
         public static bool HasParameter(this Animator animator, string paramName)

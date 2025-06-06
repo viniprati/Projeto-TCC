@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 82e694aaece34aa48a76f2a5a438750c
+guid: f7a9f61b2a21413449650f54769cd9b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5639259083973943083
-    second: Almofada Malvada Sprites_0
+      213: 2722919946788843528
+    second: Almofada Malvada Sprites (1) (1)_0
   - first:
-      213: 5544767223977882656
-    second: Almofada Malvada Sprites_1
+      213: -3825618823363089139
+    second: Almofada Malvada Sprites (1) (1)_1
   - first:
-      213: 7180155017696046605
-    second: Almofada Malvada Sprites_2
+      213: -579952843324463884
+    second: Almofada Malvada Sprites (1) (1)_2
+  - first:
+      213: 5200170541467581030
+    second: Almofada Malvada Sprites (1) (1)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,10 +57,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -145,7 +148,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Almofada Malvada Sprites_0
+      name: Almofada Malvada Sprites (1) (1)_0
       rect:
         serializedVersion: 2
         x: 9
@@ -160,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2f59a0424ca24e40800000000000000
-      internalID: 5639259083973943083
+      spriteID: 800bc24d341c9c520800000000000000
+      internalID: 2722919946788843528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Almofada Malvada Sprites_1
+      name: Almofada Malvada Sprites (1) (1)_1
       rect:
         serializedVersion: 2
         x: 73
@@ -182,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0243e6ba968f2fc40800000000000000
-      internalID: 5544767223977882656
+      spriteID: d0d256bf2fba8eac0800000000000000
+      internalID: -3825618823363089139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Almofada Malvada Sprites_2
+      name: Almofada Malvada Sprites (1) (1)_2
       rect:
         serializedVersion: 2
         x: 146
@@ -204,8 +207,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0ee20e42f805a360800000000000000
-      internalID: 7180155017696046605
+      spriteID: 4f4ea2336f793f7f0800000000000000
+      internalID: -579952843324463884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Almofada Malvada Sprites (1) (1)_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 12
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a30a74e87ba2840800000000000000
+      internalID: 5200170541467581030
       vertices: []
       indices: 
       edges: []
@@ -223,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Almofada Malvada Sprites (1) (1)_0: 2722919946788843528
+      Almofada Malvada Sprites (1) (1)_1: -3825618823363089139
+      Almofada Malvada Sprites (1) (1)_2: -579952843324463884
+      Almofada Malvada Sprites (1) (1)_3: 5200170541467581030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
