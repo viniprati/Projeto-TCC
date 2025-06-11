@@ -44,10 +44,13 @@ namespace TopDown
 
         private Rigidbody2D _rb;
 
+        // A referência ao SpriteRenderer foi removida
+
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
             _anim = GetComponent<Animator>();
+            // A linha que pegava o SpriteRenderer foi removida
             currentHealth = maxHealth;
 
             if (firePoint == null)
@@ -206,6 +209,8 @@ namespace TopDown
                 _anim.SetFloat(AnimParamMoveX, 0);
                 _anim.SetFloat(AnimParamMoveY, 0);
             }
+
+            // A seção de inversão (flip) foi removida.
         }
 
         public void TakeDamage(int amount)
