@@ -1,68 +1,51 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
-public class Sword : MonoBehaviour
+public class WeaponParent : MonoBehaviour
 {
-    public Transform attackPoint;
-    public float attackRange = 0.5f;
-    public LayerMask enemyLayers;
+    public SpriteRenderer characterRenderer, weaponRenderer;
+    public Vector2 PointerPosition { get; set; }
+    public Animator animator;
+    public float delay = 0.3f;
+    private bool attackBlocked;
 
-    public int damage = 1;
-
-    public GameObject projectilePrefab;
-    public Transform firePoint;
-
-    private SpriteRenderer sr;
-
-    void Start()
+    private void Update()
     {
-        sr = GetComponent<SpriteRenderer>();
-        if (sr == null)
+        Vector2 direction = (PointerPosition - (Vector2)transform.position).normalized;
+        transform.right = direction;
+
+        Vector2 scale = transform.localScale;
+        if (direction.x < 0)
         {
-            Debug.LogError("SpriteRenderer não encontrado na espada!");
+            scale.y = -1;
+        }
+        transform.localScale = scale;
+
+        if(transform.eulerAngles.z > 0 && transform.eulerAngles.z < 180)
+        {
+            weaponRenderer.sortingOrder = characterRenderer.sortingOrder - 1;
+        }
+        else
+        {
+            weaponRenderer.sortingOrder = characterRenderer.sortingOrder + 1;
+
         }
     }
-
-    void Update()
+    public void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            if (projectilePrefab == null || firePoint == null)
-            {
-                return;
-            }
-
-            Attack();
-        }
-
-        // Flip ao apertar A
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            Vector3 scale = transform.localScale;
-            scale.x *= -1;
-            transform.localScale = scale;
-        }
-
-        // Diminui Order in Layer ao apertar W
-        if (Input.GetKeyDown(KeyCode.W) && sr != null)
-        {
-            sr.sortingOrder -= 2;
-        }
+        if (attackBlocked)
+            return;
+        animator.SetTrigger("Attack");
+        StartCoroutine(DelayAttack());
     }
 
-    void Attack()
+    private IEnumerator DelayAttack()
     {
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-        foreach (Collider2D enemy in hitEnemies)
-        {
-            Debug.Log("Acertou " + enemy.name);
-        }
+        yield return new WaitForSeconds(delay);
+        attackBlocked = false;
     }
-
-    void OnDrawGizmosSelected()
-    {
-        if (attackPoint == null) return;
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
+    
 }
