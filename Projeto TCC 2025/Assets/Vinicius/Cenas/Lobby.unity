@@ -1500,7 +1500,7 @@ Tilemap:
       - {fileID: -1991716361, guid: b6fd09aec74abb345bdba3a16142169e, type: 3}
       - {fileID: -929359312, guid: f6171d31cc9415d4ebc9781f6fe0353c, type: 3}
       - {fileID: -63528001, guid: 0f8f6eb9caf94e54c81ddbfdfb4483ed, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: -4, z: 0}
@@ -1756,67 +1756,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &1231387204
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4578733375964695754, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8638643354314219494, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.977
-      objectReference: {fileID: 0}
-    - target: {fileID: 8638643354314219494, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.747
-      objectReference: {fileID: 0}
-    - target: {fileID: 8638643354314219494, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8638643354314219494, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8638643354314219494, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8638643354314219494, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8638643354314219494, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8638643354314219494, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8638643354314219494, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8638643354314219494, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8928354634958580101, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
-      propertyPath: m_Name
-      value: Almofada Malvada1 (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
 --- !u!1 &1289015103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1944,6 +1883,7 @@ MonoBehaviour:
   characterRenderer: {fileID: 0}
   weaponRenderer: {fileID: 0}
   animator: {fileID: 0}
+  delay: 0.3
 --- !u!1 &1464049767
 GameObject:
   m_ObjectHideFlags: 0
@@ -3320,4 +3260,3 @@ SceneRoots:
   - {fileID: 1032770858}
   - {fileID: 6550502576790906665}
   - {fileID: 888226959}
-  - {fileID: 1231387204}
