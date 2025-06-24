@@ -191,7 +191,7 @@ Transform:
   m_GameObject: {fileID: 764065056}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.145, y: -0.011, z: -0.046120167}
+  m_LocalPosition: {x: 0.017, y: -0.057, z: -0.046120167}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -539,11 +539,6 @@ MonoBehaviour:
   dashDuration: 0.2
   dashCooldown: 1
   dashKey: 32
-  projectilePrefab: {fileID: 0}
-  firePoint: {fileID: 0}
-  projectileSpeed: 10
-  shootCooldown: 0.5
-  shootKey: 323
 --- !u!58 &1032770865
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1578,7 +1573,7 @@ Tilemap:
       - {fileID: -1991716361, guid: b6fd09aec74abb345bdba3a16142169e, type: 3}
       - {fileID: -929359312, guid: f6171d31cc9415d4ebc9781f6fe0353c, type: 3}
       - {fileID: -63528001, guid: 0f8f6eb9caf94e54c81ddbfdfb4483ed, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 3, y: -3, z: 0}
@@ -1617,7 +1612,7 @@ Tilemap:
       - {fileID: -1912716772566653806, guid: 960174b4bcc336c4dbf6e2486c3d3713, type: 3}
       - {fileID: -8688910480350348910, guid: 2ecc942ebf1984e4e97711802779ee7b, type: 3}
       - {fileID: 8185563065791875171, guid: 47f688e979a0fdd4f85711bd5e70ed92, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -2, y: -2, z: 0}
@@ -1880,10 +1875,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01dd6965861b0ce4cb5d7277c65352c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterRenderer: {fileID: 0}
-  weaponRenderer: {fileID: 0}
-  animator: {fileID: 0}
-  delay: 0.3
+  attackPoint: {fileID: 0}
+  attackRange: 0.7
+  damage: 1
+  attackCooldown: 0.5
 --- !u!1 &1464049767
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,6 +3196,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7573767756243238991, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
+      propertyPath: vidaAtual
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8638643354314219494, guid: 3bb8b5361849bbc47b3ee7cd81477fba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.22

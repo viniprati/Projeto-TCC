@@ -24,14 +24,6 @@ namespace TopDown
         private float _dashTimer;
         private float _dashCooldownTimer;
 
-        [Header("Shooting")]
-        [SerializeField] private GameObject projectilePrefab;
-        [SerializeField] private Transform firePoint;
-        [SerializeField] private float projectileSpeed = 10f;
-        [SerializeField] private float shootCooldown = 0.5f;
-        [SerializeField] private KeyCode shootKey = KeyCode.Mouse0;
-        private float _shootCooldownTimer;
-
         [Header("Animations")]
         private Animator _anim;
         private const string AnimParamMoveX = "MoveX";
@@ -40,32 +32,14 @@ namespace TopDown
         private const string AnimParamLastMoveY = "LastMoveY";
         private const string AnimParamIsMoving = "IsMoving";
         private const string AnimParamDash = "Dash";
-        private const string AnimParamShoot = "Shoot";
 
         private Rigidbody2D _rb;
-
-        // A referência ao SpriteRenderer foi removida
 
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
             _anim = GetComponent<Animator>();
-            // A linha que pegava o SpriteRenderer foi removida
             currentHealth = maxHealth;
-
-            if (firePoint == null)
-            {
-                Transform foundFirePoint = transform.Find("FirePoint");
-                if (foundFirePoint != null) firePoint = foundFirePoint;
-                else
-                {
-                    GameObject fpGo = new GameObject("FirePoint");
-                    fpGo.transform.SetParent(transform);
-                    fpGo.transform.localPosition = Vector3.zero;
-                    firePoint = fpGo.transform;
-                    Debug.LogWarning("FirePoint não foi atribuído e foi criado automaticamente. Ajuste sua posição se necessário.");
-                }
-            }
 
             if (!_anim.HasParameter(AnimParamMoveX)) Debug.LogError($"Animator não tem o parâmetro: {AnimParamMoveX}");
             if (!_anim.HasParameter(AnimParamMoveY)) Debug.LogError($"Animator não tem o parâmetro: {AnimParamMoveY}");
@@ -78,7 +52,6 @@ namespace TopDown
         {
             HandleInput();
             HandleDashState();
-            HandleShooting();
             HandleAnimations();
         }
 
@@ -151,45 +124,6 @@ namespace TopDown
             _isDashing = false;
         }
 
-        private void HandleShooting()
-        {
-            if (_shootCooldownTimer > 0)
-                _shootCooldownTimer -= Time.deltaTime;
-
-            if (Input.GetKeyDown(shootKey) && _shootCooldownTimer <= 0 && !_isDashing)
-            {
-                if (projectilePrefab == null || firePoint == null)
-                {
-                    Debug.LogError("Projectile Prefab ou Fire Point não atribuído!");
-                    return;
-                }
-
-                Shoot();
-                _shootCooldownTimer = shootCooldown;
-            }
-        }
-
-        private void Shoot()
-        {
-            Vector2 shootDirection = _lastRawInputDirection.normalized;
-            if (shootDirection == Vector2.zero)
-                shootDirection = Vector2.down;
-
-            GameObject projectileGO = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
-            Rigidbody2D projectileRb = projectileGO.GetComponent<Rigidbody2D>();
-
-            if (projectileRb != null)
-                projectileRb.linearVelocity = shootDirection * projectileSpeed;
-            else
-                Debug.LogWarning("Projétil não tem Rigidbody2D.");
-
-            float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
-            projectileGO.transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
-
-            if (_anim.HasParameter(AnimParamShoot))
-                _anim.SetTrigger(AnimParamShoot);
-        }
-
         private void HandleAnimations()
         {
             bool isCurrentlyMoving = _movementInput.sqrMagnitude > 0.01f;
@@ -209,8 +143,6 @@ namespace TopDown
                 _anim.SetFloat(AnimParamMoveX, 0);
                 _anim.SetFloat(AnimParamMoveY, 0);
             }
-
-            // A seção de inversão (flip) foi removida.
         }
 
         public void TakeDamage(int amount)
@@ -219,15 +151,13 @@ namespace TopDown
             Debug.Log($"Player levou dano. Vida atual: {currentHealth}");
 
             if (currentHealth <= 0)
-            {
                 Die();
-            }
         }
 
         private void Die()
         {
             Debug.Log("Player morreu.");
-            gameObject.SetActive(false); // ou animar morte, recarregar cena, etc.
+            gameObject.SetActive(false);
         }
     }
 

@@ -1,7 +1,7 @@
 using UnityEngine;
 using TopDown; // Mantendo o namespace caso o PlayerMovement esteja nele
 
-public class InimigoSeguidor : MonoBehaviour
+public class almofada : MonoBehaviour
 {
     [Header("Referências")]
     public Transform alvo;

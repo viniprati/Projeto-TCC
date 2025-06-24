@@ -1,51 +1,70 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
+using TopDown;
 
-public class WeaponParent : MonoBehaviour
+public class Sword : MonoBehaviour
 {
-    public SpriteRenderer characterRenderer, weaponRenderer;
-    public Vector2 PointerPosition { get; set; }
-    public Animator animator;
-    public float delay = 0.3f;
-    private bool attackBlocked;
+    public Transform attackPoint;
+    public float attackRange = 0.7f;
+    public int damage = 1;
+    public float attackCooldown = 0.5f;
 
-    private void Update()
+    private float lastAttackTime;
+    private Animator anim;
+    private PlayerMovement playerMovement;
+
+    [Header("Movimento")]
+    public float velocidade = 3f;
+
+    [Header("Ataque")]
+    public float distanciaAtaque = 1.5f;
+    public int dano = 1; // Ajustei para 1, já que a vida do player é 10
+    public float cooldownAtaque = 2f;
+    public float proximoAtaque = 0f;
+
+     void Start()
     {
-        Vector2 direction = (PointerPosition - (Vector2)transform.position).normalized;
-        transform.right = direction;
+        anim = GetComponent<Animator>();
+        playerMovement = GetComponentInParent<PlayerMovement>();
 
-        Vector2 scale = transform.localScale;
-        if (direction.x < 0)
+        // Tenta encontrar o AttackPoint se não estiver atribuído
+        if (attackPoint == null)
         {
-            scale.y = -1;
-        }
-        transform.localScale = scale;
-
-        if(transform.eulerAngles.z > 0 && transform.eulerAngles.z < 180)
-        {
-            weaponRenderer.sortingOrder = characterRenderer.sortingOrder - 1;
-        }
-        else
-        {
-            weaponRenderer.sortingOrder = characterRenderer.sortingOrder + 1;
-
+            attackPoint = transform.Find("AttackPoint");
+            if (attackPoint == null)
+                Debug.LogError("AttackPoint não encontrado como filho da Sword.");
         }
     }
-    public void Attack()
+
+    void Update()
     {
-        if (attackBlocked)
-            return;
-        animator.SetTrigger("Attack");
-        StartCoroutine(DelayAttack());
+        if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time >= lastAttackTime + attackCooldown)
+        {
+            Attack();
+        }
     }
 
-    private IEnumerator DelayAttack()
+    void Attack()
     {
-        yield return new WaitForSeconds(delay);
-        attackBlocked = false;
+        lastAttackTime = Time.time;
+        anim?.SetTrigger("Attack");
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
+
+        foreach (Collider2D hit in hits)
+        {
+            almofada enemy = hit.GetComponent<almofada>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
+        }
     }
-    
+
+    void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null) return;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
 }
