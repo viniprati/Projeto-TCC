@@ -17,7 +17,7 @@ public class Sword : MonoBehaviour
 
     [Header("Ataque")]
     public float distanciaAtaque = 1.5f;
-    public int dano = 1; // Ajustei para 1, já que a vida do player é 10
+    public int dano = 1;
     public float cooldownAtaque = 2f;
     public float proximoAtaque = 0f;
 
